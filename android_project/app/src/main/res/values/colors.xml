@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryBlue">#352faf</color>
+    <color name="golden">#ffcc2b</color>
+    <color name="black">#0e1731</color>
+    <color name="textHintColor">#5c6275</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="loaderColor">#80FFFFFF</color>
+    <color name="lightGray">#e9edf5</color>
+    <color name="red"> #eb254a</color>
+    <color name="no_post">#b2bcd7</color>
+    <color name="green">#09c868</color>
+    <color name="button_gray">#b8bbc2</color>
+    <color name="lightBlue">#17c0ff</color>
+    <color name="notification_bg">#f2f2f2</color>
+
+</resources>

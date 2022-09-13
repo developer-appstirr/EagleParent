@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Eagle Parent</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="compressing_please_wait">Compressing... Please Wait!!</string>
+    <string name="from_camera">From Camera</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="email_is_empty">Email is empty!</string>
+    <string name="email_is_not_valid">Email Address is not valid!</string>
+    <string name="start_time_is_empty">Start Time is empty!</string>
+    <string name="end_time_is_empty">End Time is empty!</string>
+    <string name="password_is_empty">Password is empty!</string>
+    <string name="firstname_is_empty">First name is empty!</string>
+    <string name="gender_is_empty">Gender is empty!</string>
+    <string name="dob_is_empty">Date of birth is empty!</string>
+    <string name="fullName_is_empty">Full name is empty!</string>
+    <string name="lastName_is_empty">Last name is empty!</string>
+    <string name="phone_is_empty">Phone number is empty!</string>
+    <string name="is_empty_old_password">Old Password should not be empty!</string>
+    <string name="is_empty_confirm_password">Confirm Password should not be empty!</string>
+    <string name="is_empty_new_password">New Password should not be empty!</string>
+    <string name="is_confrim_password_match">Confirm password not matched!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="by_signing_in_to_eagle_you_agree_to_our_terms_and_privacy_policy">By signing in to Eagle, you agree to our <font color='#44409e'>terms</font> and <font color='#44409e'>privacy policy.</font></string>
+    <string name="_500_activities_in_last_7_days"><u>500 activities in last 7 days</u></string>
+    <string name="google_maps_api_key" translatable="false">AIzaSyDDrTJdGUyRovP_RhWImHn-AKxY-U1sFTE</string>
+    <string name="delete">Delete</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="register_now"><u>Register Now</u></string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primaryBlue"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.circularreveal.CircularRevealFrameLayout
+          android:layout_marginVertical="@dimen/x32"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvProfile"
+                android:paddingRight="@dimen/x8"
+                android:layout_width="@dimen/x140"
+                android:layout_height="@dimen/x140"
+                android:src="@drawable/profile"/>
+
+            <ImageView
+                android:id="@+id/ivEditProfileImg"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/shape_circle"
+                android:layout_width="50dp"
+                android:padding="@dimen/x10"
+                android:layout_gravity="center|end"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_camera_alt_24"
+                app:tint="@color/golden" />
+
+
+        </com.google.android.material.circularreveal.CircularRevealFrameLayout>
+
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x60"
+            android:layout_marginHorizontal="@dimen/x30"
+            android:layout_marginVertical="@dimen/x16"
+            android:background="@drawable/ic_text_field"
+            android:fontFamily="@font/redhatdisplay_medium"
+            android:gravity="center|start"
+            android:hint="Child's First Name"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/x16"
+            android:paddingRight="@dimen/x16"
+            android:textColor="@color/textHintColor"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="@dimen/s16" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x60"
+            android:layout_marginHorizontal="@dimen/x30"
+            android:layout_marginBottom="@dimen/x16"
+            android:background="@drawable/ic_text_field"
+            android:fontFamily="@font/redhatdisplay_medium"
+            android:gravity="center|start"
+            android:hint="Child's Last Name"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/x16"
+            android:paddingRight="@dimen/x16"
+            android:textColor="@color/textHintColor"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="@dimen/s16" />
+
+
+        <!--        <EditText-->
+<!--            android:id="@+id/editText1"-->
+<!--            android:hint="EditText"-->
+<!--            android:editable="false"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true" />-->
+
+
+        <Spinner
+            android:theme="@style/SpinnerTheme"
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x60"
+            android:paddingLeft="@dimen/x8"
+            android:spinnerMode="dropdown"
+            android:paddingRight="@dimen/x8"
+            android:layout_marginHorizontal="@dimen/x30"
+            android:layout_marginBottom="@dimen/x16"
+            android:background="@drawable/ic_text_field"
+            android:textColor="@color/textHintColor"
+            android:textSize="@dimen/s16" />
+
+        <EditText
+            android:layout_marginBottom="@dimen/x16"
+            android:id="@+id/etDob"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x60"
+            android:paddingLeft="@dimen/x16"
+            android:paddingRight="@dimen/x16"
+            android:layout_marginHorizontal="@dimen/x30"
+            android:drawablePadding="@dimen/x20"
+            android:drawableTint="@color/black"
+            android:background="@drawable/ic_text_field"
+            app:drawableEndCompat="@drawable/ic_calender"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:gravity="center|start"
+            android:inputType="textCapSentences"
+            android:hint="Date of Birth"
+            android:fontFamily="@font/redhatdisplay_medium"
+            android:textColor="@color/textHintColor"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="@dimen/s16" />
+
+
+
+        <TextView
+           android:layout_marginVertical="@dimen/x16"
+            android:id="@+id/btnAddChild"
+            android:padding="@dimen/x16"
+            android:fontFamily="@font/redhatdisplay_bold"
+            android:layout_marginHorizontal="@dimen/x30"
+            android:backgroundTint="@color/golden"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="@dimen/x60"
+            android:text="Add Child"
+            android:background="@drawable/ic_bg_button"
+            android:textSize="@dimen/s16"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

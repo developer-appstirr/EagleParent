@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|start"
+    android:weightSum="6"
+    android:layout_marginTop="@dimen/x16"
+    android:layout_marginBottom="@dimen/x16"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textAllCaps="false"
+        android:id="@+id/txtWebName"
+        android:layout_marginStart="@dimen/x16"
+        android:layout_weight="5"
+        android:textColor="@color/black"
+        android:text="www.example.com"
+        android:textSize="@dimen/s16"
+        android:fontFamily="@font/redhatdisplay_bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+      android:background="@null"
+        app:icon="@drawable/ic_baseline_check_circle_outline_24"
+        app:iconTint="@color/green"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        app:backgroundTint="@color/white"
+        android:stateListAnimator="@null"
+
+        android:id="@+id/txtAllow"
+        android:layout_gravity="center"
+        android:layout_width="24dp"
+        android:layout_height="@dimen/x24"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:background="@null"
+        android:stateListAnimator="@null"
+        app:backgroundTint="@color/white"
+        android:id="@+id/txtBlock"
+        app:icon="@drawable/ic_block"
+        app:iconTint="@color/red"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:layout_width="24dp"
+        android:layout_height="@dimen/x24"
+   />
+
+
+
+
+</LinearLayout>
+

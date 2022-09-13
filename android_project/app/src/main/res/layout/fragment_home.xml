@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primaryBlue"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginStart="@dimen/x16"
+        android:layout_marginBottom="@dimen/x16"
+        >
+
+        <ImageView
+            android:id="@+id/btnAddChild"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x65"
+            android:src="@drawable/ic_story_add"
+            android:layout_gravity="center"
+
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:overScrollMode="never"
+            android:id="@+id/rvChildProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="3"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_marginStart="@dimen/x5"
+            tools:listitem="@layout/item_list_child"
+            android:scrollbars="none"
+            />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:scrollbars="none"
+        android:padding="@dimen/x16"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+                <TextView
+                    android:layout_marginTop="@dimen/x250"
+                    android:visibility="gone"
+                    android:id="@+id/txtNoResults"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s18"
+                    android:fontFamily="@font/redhatdisplay_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No child yet!"/>
+
+
+            <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/llHomePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x8"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivChildProfile"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="@dimen/x65"
+                    android:src="@drawable/profile" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/x16"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtChildName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/redhatdisplay_bold"
+                        android:text="Peter Parker"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s16" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/redhatdisplay_regular"
+                        android:text="Default rules 6:00 am - 9:00 pm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s12" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="@dimen/x24"
+                    android:layout_height="@dimen/x24"
+                    android:layout_gravity="top"
+                    android:src="@drawable/ic_location"
+                    app:tint="@color/primaryBlue" />
+
+                <ImageView
+                    android:layout_marginStart="@dimen/x10"
+                    android:id="@+id/ivSettings"
+                    android:layout_width="@dimen/x24"
+                    android:layout_height="@dimen/x24"
+                    android:layout_gravity="top"
+                    android:src="@drawable/ic_filled_settings"
+                    app:tint="@color/primaryBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/x5"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddDevice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x4"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/redhatdisplay_bold"
+                    android:text="Add Device"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s11"
+                    app:backgroundTint="@color/green"
+                    app:cornerRadius="@dimen/x20"
+                    app:icon="@drawable/ic_add"
+                    app:iconGravity="textStart"
+                    app:iconSize="@dimen/x16"
+
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDisconnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/redhatdisplay_bold"
+                    android:text="Connected"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s11"
+                    app:backgroundTint="@color/green"
+                    app:cornerRadius="@dimen/x20"
+                    app:icon="@drawable/ic_disconnect"
+
+                    app:iconGravity="textStart"
+                    app:iconSize="16dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/x24"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/llProtectedDevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/redhatdisplay_regular"
+                        android:text="03"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/s32" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/redhatdisplay_bold"
+                        android:text="Protected Device"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s16" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llAlerts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/redhatdisplay_regular"
+                        android:text="07"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/s32" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/redhatdisplay_bold"
+                        android:text="Alerts"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/s16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHideScreenTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/x16"
+                android:background="@color/lightGray"
+                android:orientation="horizontal"
+                android:padding="@dimen/x8"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.8"
+                    android:fontFamily="@font/redhatdisplay_bold"
+                    android:text="Screen Time"
+                    android:textColor="@color/primaryBlue"
+                    android:textSize="@dimen/s14" />
+
+                <ImageView
+                    android:id="@+id/imgHideScreenTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x14"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:rotation="-90"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/black" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x120"
+                android:src="@drawable/ic_graph" />
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btnTotalActivities"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/redhatdisplay_bold"
+                android:gravity="center"
+                android:text="200 activities in last 7 days"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12"
+                app:cornerRadius="@dimen/x16"
+                app:strokeColor="@color/textHintColor"
+                app:strokeWidth="0.2dp" />
+
+            <LinearLayout
+                android:id="@+id/llHideMonitorApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/x16"
+                android:background="@color/lightGray"
+                android:orientation="horizontal"
+                android:padding="@dimen/x8"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.8"
+                    android:fontFamily="@font/redhatdisplay_bold"
+                    android:text="Monitored Apps"
+                    android:textColor="@color/primaryBlue"
+                    android:textSize="@dimen/s14" />
+
+                <ImageView
+                    android:id="@+id/imgHideMonitor"
+                    android:layout_width="@dimen/x14"
+                    android:layout_height="@dimen/x14"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:rotation="-90"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/black" />
+
+            </LinearLayout>
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:gravity="start"-->
+<!--                    android:padding="@dimen/x4"-->
+<!--                    android:id="@+id/llNeedsReview"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_width="@dimen/x18"-->
+<!--                        android:layout_height="@dimen/x18"-->
+<!--                        android:src="@drawable/ic_needs_review" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txtNeedsReview"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginHorizontal="@dimen/x5"-->
+<!--                        android:fontFamily="@font/redhatdisplay_bold"-->
+<!--                        android:text="Needs Review"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/s10" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/dialog_round_bg"-->
+<!--                        android:backgroundTint="@color/primaryBlue"-->
+<!--                        android:fontFamily="@font/redhatdisplay_regular"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingHorizontal="@dimen/x6"-->
+<!--                        android:paddingVertical="@dimen/x2"-->
+<!--                        android:text="12"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/s11" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:padding="@dimen/x4"-->
+<!--                    android:id="@+id/llReviewed"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="@dimen/x8"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_width="@dimen/x18"-->
+<!--                        android:layout_height="@dimen/x18"-->
+<!--                        android:src="@drawable/ic_review" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txtReviewed"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginHorizontal="@dimen/x5"-->
+<!--                        android:fontFamily="@font/redhatdisplay_bold"-->
+<!--                        android:text="Reviewed"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/s10" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/dialog_round_bg"-->
+<!--                        android:backgroundTint="@color/green"-->
+<!--                        android:fontFamily="@font/redhatdisplay_regular"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingHorizontal="@dimen/x6"-->
+<!--                        android:paddingVertical="@dimen/x2"-->
+<!--                        android:text="27"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/s11" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:gravity="end"-->
+<!--                    android:padding="@dimen/x4"-->
+<!--                    android:id="@+id/llCritical"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_width="@dimen/x18"-->
+<!--                        android:layout_height="@dimen/x18"-->
+<!--                        android:src="@drawable/ic_critical" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txtCritical"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginHorizontal="@dimen/x5"-->
+<!--                        android:fontFamily="@font/redhatdisplay_bold"-->
+<!--                        android:text="Critical"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/s10" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"                        android:background="@drawable/dialog_round_bg"-->
+<!--                        android:backgroundTint="@color/red"-->
+<!--                        android:fontFamily="@font/redhatdisplay_regular"-->
+<!--                        android:gravity="center"-->
+<!--                        android:paddingHorizontal="@dimen/x6"-->
+<!--                        android:paddingVertical="@dimen/x2"-->
+<!--                        android:text="03"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/s11" />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--<androidx.recyclerview.widget.RecyclerView-->
+<!--    android:id="@+id/rvChip"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    tools:listitem="@layout/item_chip"-->
+<!--    tools:itemCount="6"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:overScrollMode="never"-->
+<!--    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--    />-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:layout_height="wrap_content">
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:singleLine="true">
+
+            </com.google.android.material.chip.ChipGroup>
+
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@+id/flContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                />
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

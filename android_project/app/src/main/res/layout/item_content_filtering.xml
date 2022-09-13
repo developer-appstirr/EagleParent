@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|start"
+    android:weightSum="6"
+    android:layout_marginBottom="@dimen/x36"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_marginStart="@dimen/x16"
+        android:id="@+id/txtCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/x16"
+
+        android:layout_weight="5.4"
+        android:fontFamily="@font/redhatdisplay_bold"
+        android:text="Abortion"
+        android:textColor="@color/black"
+        android:textSize="@dimen/s16" />
+
+    <ImageView
+        android:layout_weight="0.2"
+        android:src="@drawable/ic_tick"
+        android:gravity="center"
+        android:id="@+id/imgAllow"
+        android:layout_marginStart="@dimen/x16"
+        android:layout_width="@dimen/x32"
+        android:layout_height="@dimen/x32"
+       />
+
+    <ImageView
+        android:layout_weight="0.2"
+        android:src="@drawable/ic_alert"
+        android:gravity="center"
+        android:id="@+id/imgAlert"
+        android:layout_marginHorizontal="@dimen/x20"
+        android:layout_width="@dimen/x32"
+        android:layout_height="@dimen/x32"
+         />
+
+    <ImageView
+        android:layout_marginEnd="@dimen/x16"
+        android:layout_weight="0.2"
+        android:src="@drawable/ic_unblock"
+        android:gravity="center"
+        android:id="@+id/imgBlock"
+        android:layout_width="@dimen/x34"
+        android:layout_height="@dimen/x34"
+        />
+
+
+
+</LinearLayout>
+

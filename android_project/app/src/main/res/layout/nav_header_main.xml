@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/golden"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/x30"
+        android:padding="@dimen/x16">
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x20"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:src="@drawable/profile"
+
+            />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/selectImage"-->
+<!--            android:layout_width="@dimen/x24"-->
+<!--            android:layout_height="@dimen/x24"-->
+<!--            android:src="@drawable/ic_circle_edit"-->
+<!--            android:layout_gravity="end|top"-->
+<!--            tools:ignore="ContentDescription" />-->
+
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/nav_header_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/redhatdisplay_bold"
+        android:gravity="center"
+        android:paddingTop="@dimen/x5"
+        android:text="John Doe"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/s25" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/x16"
+            android:id="@+id/nav_header_userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+        android:textSize="@dimen/s16"
+        android:fontFamily="@font/redhatdisplay_medium"
+            android:text="johndoe@test.com"
+            android:layout_gravity="center"
+            android:gravity="center"
+        />
+
+    </LinearLayout>

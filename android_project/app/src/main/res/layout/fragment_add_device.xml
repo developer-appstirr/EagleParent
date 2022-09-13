@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primaryBlue"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        >
+
+     <ImageView
+         android:layout_marginHorizontal="@dimen/x80"
+         android:layout_marginVertical="@dimen/x32"
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/x250"
+         android:src="@drawable/device"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginHorizontal="@dimen/x60"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="What type of device would you like to protect?"
+            android:textSize="@dimen/s22"
+            android:fontFamily="@font/redhatdisplay_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="@dimen/x48"
+            android:layout_marginBottom="@dimen/x30"
+            android:id="@+id/btnIos"
+            android:fontFamily="@font/redhatdisplay_bold"
+            android:layout_marginHorizontal="@dimen/x30"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="@dimen/x60"
+            android:text="iOS"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_bg_button"
+            android:textSize="@dimen/s16"
+            app:icon="@drawable/drawable_apple"
+            app:iconGravity="textStart"
+            app:backgroundTint="@color/golden"
+            app:iconPadding="10dp"
+            app:iconTint="@color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginBottom="@dimen/x30"
+            android:id="@+id/btnAndroid"
+            android:fontFamily="@font/redhatdisplay_bold"
+            android:layout_marginHorizontal="@dimen/x30"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="@dimen/x60"
+            android:textAllCaps="false"
+            android:text="Android"
+            android:background="@drawable/ic_bg_button"
+            android:textSize="@dimen/s16"
+            app:icon="@drawable/drawable_android"
+            app:iconGravity="textStart"
+            app:backgroundTint="@color/golden"
+            app:iconPadding="10dp"
+            app:iconTint="@color/black"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

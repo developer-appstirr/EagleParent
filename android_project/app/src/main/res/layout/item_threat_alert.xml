@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_device"
+    android:padding="@dimen/x8"
+    android:layout_marginTop="@dimen/x16"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x8"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/ivAppImage"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:src="@drawable/facebook" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/x16"
+            android:layout_weight="3"
+            android:orientation="vertical">
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxEms="4"
+                android:id="@+id/txtAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity= "start|center"
+                android:fontFamily="@font/redhatdisplay_bold"
+                android:text="Google Chromeeeeeee"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16" />
+
+             <TextView
+                 android:layout_weight="2"
+                 android:id="@+id/txtThreatSeverity"
+                 android:gravity="start|center"
+                 android:layout_gravity="start|center"
+                 android:layout_marginStart="@dimen/x8"
+                 android:layout_marginEnd="@dimen/x8"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/redhatdisplay_bold"
+                 android:text="High"
+                 android:textColor="@color/red"
+                 android:textSize="@dimen/s12"
+                  />
+
+             <ImageView
+                 android:id="@+id/ivDisconnect"
+                 android:layout_gravity="end|center"
+                 android:layout_width="@dimen/x24"
+                 android:layout_height="@dimen/x24"
+                 android:src="@drawable/ic_disconnect"
+                 app:tint="@color/green" />
+
+             <ImageView
+                 android:id="@+id/ivBlock"
+                 android:layout_marginHorizontal="@dimen/x16"
+                 android:layout_gravity="end|center"
+                 android:layout_width="@dimen/x26"
+                 android:layout_height="@dimen/x26"
+                 android:src="@drawable/ic_unblock"
+                 app:tint="@color/primaryBlue"
+                 />
+
+             <ImageView
+                 android:layout_marginEnd="@dimen/x8"
+                 android:id="@+id/ivPhone"
+                 android:layout_gravity="end|center"
+                 android:layout_width="@dimen/x20"
+                 android:layout_height="@dimen/x20"
+                 android:src="@drawable/ic_intent_phone"
+                 app:tint="@color/primaryBlue" />
+
+
+
+  </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="on April 30,2021"
+                android:textColor="@color/textHintColor"
+                android:textSize="@dimen/s12" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/x10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGray"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x16"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imvProfile"
+            android:layout_gravity="top"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:src="@drawable/profile"/>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <TextView
+                android:layout_marginHorizontal="@dimen/x16"
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/redhatdisplay_medium"
+                android:text="Alexa"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s14" />
+
+            <TextView
+                android:layout_marginHorizontal="@dimen/x16"
+                android:id="@+id/txtThreatMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="You have a ugly face just die."
+                android:textColor="@color/black"
+                android:textSize="@dimen/s14" />
+
+            <TextView
+                android:layout_marginTop="@dimen/x16"
+                android:id="@+id/txtLink"
+                android:layout_marginHorizontal="@dimen/x16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="https://www.sometextlink.com"
+                android:textColor="@color/lightBlue"
+                android:textSize="@dimen/s14" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/x16"
+                android:layout_marginHorizontal="@dimen/x16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   >
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

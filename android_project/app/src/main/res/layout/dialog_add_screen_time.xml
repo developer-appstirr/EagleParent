@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_round_bg"
+    android:gravity="center"
+    android:layout_margin="@dimen/x15"
+    android:padding="@dimen/x5"
+    android:id="@+id/llMainView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Screen Time"
+        android:fontFamily="@font/redhatdisplay_bold"
+        android:textColor="@color/primaryBlue"
+        android:textSize="@dimen/s20"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginBottom="@dimen/x20"/>
+
+        <ImageView
+            android:id="@+id/btnCross"
+            android:layout_width="@dimen/x38"
+            android:layout_height="@dimen/x38"
+            android:src="@drawable/ic_close"
+            android:paddingHorizontal="@dimen/x6"
+            android:layout_marginEnd="@dimen/x8"
+            android:gravity="center"
+            android:layout_gravity="end|center"
+            app:tint="@color/black" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginBottom="@dimen/x8"
+        android:id="@+id/etScreenName"
+        android:paddingHorizontal="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_bg_device"
+        android:paddingVertical="@dimen/x16"
+        android:inputType="textCapSentences"
+        android:hint="Rule Name"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/s16" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/x8"
+        android:paddingVertical="@dimen/x16"
+        android:paddingHorizontal="@dimen/x24"
+        android:id="@+id/txtFromTime"
+        android:drawableTint="@color/black"
+        android:background="@drawable/dialog_bg_device"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:text="From"
+        android:drawableRight="@drawable/ic_time"
+        android:textSize="@dimen/s16"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginBottom="@dimen/x16"
+        android:paddingVertical="@dimen/x16"
+        android:paddingHorizontal="@dimen/x24"
+        android:id="@+id/txtToTime"
+        android:drawableTint="@color/black"
+        android:gravity="center|start"
+        android:background="@drawable/dialog_bg_device"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:text="To"
+        android:drawableRight="@drawable/ic_time"
+        android:textSize="@dimen/s16"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/x20"
+        >
+
+        <TextView
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_corner"
+            android:backgroundTint="@color/golden"
+            android:fontFamily="@font/redhatdisplay_medium"
+            android:gravity="center"
+            android:padding="@dimen/x16"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s16" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

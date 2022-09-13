@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:gravity="center_vertical"
+    android:id="@+id/headerLayout"
+    android:background="@drawable/bg_top"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@drawable/bg_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x75">
+
+    <FrameLayout
+        android:id="@+id/flBackGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/x8"
+        android:paddingBottom="@dimen/x8">
+
+        <LinearLayout
+            android:id="@+id/llBackLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/x16"
+            android:visibility="visible">
+
+
+
+            <ImageView
+
+                android:id="@+id/ivLeftBackIcon"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/x10"
+                android:layout_marginTop="@dimen/x5"
+                android:padding="@dimen/x5"
+                android:layout_marginBottom="@dimen/x5"/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvLeftText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/s14"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivRightAddIcon"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/x48"
+            android:src="@drawable/ic_baseline_add_24"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="@dimen/x10"
+            android:layout_marginTop="@dimen/x5"
+            android:padding="@dimen/x5"
+            android:layout_marginBottom="@dimen/x5"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivCheckAllIcon"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x40"
+            android:src="@drawable/ic_check_white_24dp"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="@dimen/x10"
+            android:layout_marginTop="@dimen/x5"
+            android:padding="@dimen/x5"
+            android:layout_marginBottom="@dimen/x5"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivRightNotificationIcon"
+            android:layout_width="@dimen/x34"
+            android:layout_height="@dimen/x34"
+            android:src="@drawable/ic_notification"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="@dimen/x10"
+            android:layout_marginTop="@dimen/x5"
+            android:padding="@dimen/x5"
+            android:layout_marginBottom="@dimen/x5"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_marginStart="@dimen/x16"
+            android:id="@+id/ivLeftNavigationIcon"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:src="@drawable/ic_nav"
+            android:layout_gravity="start|center"
+            android:layout_marginEnd="@dimen/x10"
+            android:layout_marginTop="@dimen/x5"
+            android:padding="@dimen/x5"
+            android:layout_marginBottom="@dimen/x5"/>
+
+
+        <LinearLayout
+            android:id="@+id/llAppLogoSection"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/x60"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="visible">
+
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/x8"
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s22"
+                android:textColor="@color/white"
+                android:fontFamily="@font/redhatdisplay_bold"
+                android:text="Eagle"/>
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

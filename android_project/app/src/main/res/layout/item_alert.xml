@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|start"
+    android:layout_marginTop="@dimen/x16"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x8"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/ivAppImage"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x65"
+            android:src="@drawable/facebook" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/x16"
+            android:layout_weight="3"
+            android:orientation="vertical">
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/txtAppName"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:fontFamily="@font/redhatdisplay_bold"
+                android:text="Facebook"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16" />
+
+             <com.google.android.material.button.MaterialButton
+                 android:id="@+id/btnBadge"
+                 android:layout_width="wrap_content"
+                 android:layout_height="@dimen/x40"
+                 android:layout_gravity="end"
+                 android:backgroundTint="@color/white"
+                 android:fontFamily="@font/redhatdisplay_bold"
+                 android:gravity="end"
+                 android:text="Sexual Content"
+                 android:textAllCaps="false"
+                 android:textColor="@color/red"
+                 android:textSize="@dimen/s12"
+                 app:cornerRadius="@dimen/x16"
+                 app:strokeColor="@color/textHintColor"
+                 app:strokeWidth="0.3dp" />
+
+
+  </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="10-05-21   |   13:24"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s12" />
+
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_marginVertical="@dimen/x16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:text="Proin quis bibendum nisi. Curabitur eu lectus erat ivamus eget ante sit amet orci facilisis mattis."
+                android:textColor="@color/textHintColor"
+                android:textSize="@dimen/s12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x4"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/redhatdisplay_bold"
+                    android:text="Block App"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s11"
+                    app:backgroundTint="@color/red"
+                    app:cornerRadius="@dimen/x20"
+
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSendReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x4"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/redhatdisplay_bold"
+                    android:text="Send Report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/s11"
+                    app:backgroundTint="@color/golden"
+                    app:cornerRadius="@dimen/x20"
+
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

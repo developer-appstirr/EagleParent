@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primaryBlue"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:layout_height="match_parent"
+        >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddWebException"
+        android:layout_margin="@dimen/x24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        app:tint="@color/white"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryBlue"
+        android:src="@drawable/ic_add"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/x16"
+        >
+
+
+
+
+        <TextView
+            android:layout_marginBottom="@dimen/x30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John Smith Apps"
+            android:fontFamily="@font/redhatdisplay_bold"
+            android:textSize="@dimen/s20"
+            android:layout_marginTop="@dimen/x30"
+            android:textColor="@color/black"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingStart="-16dp"
+            android:id="@+id/rvMyApps"
+            tools:itemCount="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_my_apps" />
+
+        <TextView
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginBottom="@dimen/x16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Web Excemptions"
+            android:fontFamily="@font/redhatdisplay_bold"
+            android:textSize="@dimen/s20"
+            android:textColor="@color/black"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingStart="-16dp"
+            android:id="@+id/rvWeb"
+            tools:itemCount="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_web_list" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+

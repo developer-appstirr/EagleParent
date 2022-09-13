@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|start"
+    android:weightSum="3"
+    android:layout_marginBottom="@dimen/x30"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+                android:id="@+id/txtScreenName"
+                android:layout_marginHorizontal="@dimen/x16"
+                android:textColor="@color/black"
+                android:text="Default"
+                android:textSize="@dimen/s18"
+                android:fontFamily="@font/redhatdisplay_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_marginHorizontal="@dimen/x16"
+                android:textColor="@color/textHintColor"
+                android:text="06:00 AM - 09:00 PM"
+                android:textSize="@dimen/s14"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txtActive"
+        android:layout_marginHorizontal="@dimen/x16"
+        android:textColor="@color/green"
+        android:text="Active"
+        android:textSize="@dimen/s14"
+        android:fontFamily="@font/redhatdisplay_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>
+
